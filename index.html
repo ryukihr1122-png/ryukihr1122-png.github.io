@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RYUKI HARA — Apps</title>
+<meta name="description" content="RYUKI HARA が開発する iOS アプリの公式サイト。NanoWalk、FlickTask を配信中。" />
+<style>
+  :root {
+    --bg: #f7f5f0;
+    --card: #ffffff;
+    --text: #26211a;
+    --dim: #6b6459;
+    --line: #e6e0d6;
+    --accent: #c4870a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16130f; --card:#211d17; --text:#f0ebe2; --dim:#a89f90; --line:#332c22; --accent:#e0a832; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 20px 80px; }
+  header { text-align: center; margin-bottom: 48px; }
+  h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: .02em; }
+  .tag { color: var(--dim); font-size: .95rem; margin: 0; }
+  h2 { font-size: 1.05rem; margin: 40px 0 16px; color: var(--dim); font-weight: 600; }
+  .app {
+    display: flex; align-items: center; gap: 16px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 18px 20px; margin-bottom: 14px; text-decoration: none; color: inherit;
+    transition: transform .12s ease, border-color .12s ease;
+  }
+  .app:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .app .emoji { font-size: 2rem; width: 44px; text-align: center; }
+  .app .body { flex: 1; }
+  .app .name { font-weight: 700; font-size: 1.1rem; }
+  .app .desc { color: var(--dim); font-size: .9rem; }
+  .app .cta { color: var(--accent); font-weight: 700; font-size: .9rem; white-space: nowrap; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); text-align: center; color: var(--dim); font-size: .85rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>RYUKI HARA</h1>
+      <p class="tag">日々をちょっと良くする、個人開発のアプリ</p>
+    </header>
+
+    <h2>配信中のアプリ</h2>
+
+    <a class="app" href="https://apps.apple.com/jp/app/nanowalk/id6761401876">
+      <div class="emoji">🐾</div>
+      <div class="body">
+        <div class="name">NanoWalk</div>
+        <div class="desc">歩数でモンスターを育てる、歩くのが楽しくなるアプリ</div>
+      </div>
+      <div class="cta">App Store →</div>
+    </a>
+
+    <a class="app" href="https://apps.apple.com/jp/app/flicktask/id6778016596">
+      <div class="emoji">🗂️</div>
+      <div class="body">
+        <div class="name">FlickTask</div>
+        <div class="desc">思いついたらかく。あとで並べる。そしたら、今日が見える。</div>
+      </div>
+      <div class="cta">App Store →</div>
+    </a>
+
+    <footer>
+      <p>お問い合わせ：<a href="mailto:hara.r@enfac.co.jp">hara.r@enfac.co.jp</a></p>
+      <p><a href="/privacy.html">プライバシーポリシー</a></p>
+      <p>© 2026 RYUKI HARA</p>
+    </footer>
+  </div>
+</body>
+</html>

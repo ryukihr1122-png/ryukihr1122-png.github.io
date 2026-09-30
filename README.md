@@ -1,12 +1,10 @@
-# ryukihr1122-png.github.io
+# ryukihr1122-png.github.io（旧サイト・転送用）
 
-RYUKI HARA の個人開発アプリ共通デベロッパサイト。
+2026-10-01 に個人サイトを **https://riu-create.com**（Xserver）へ移転した。正本は
+`My claude Agent Private/D026_homepage/`（ここを直さない）。
 
-- `index.html` — アプリ一覧（トップ）
-- `privacy.html` — プライバシーポリシー（全アプリ共通）
-- `app-ads.txt` — AdMob 認証用（発行者ID単位なので全アプリ共通で使い回し）
-
-## 新しいアプリを追加するとき
-1. `index.html` の「配信中のアプリ」にカードを1枚追記
-2. App Store Connect で、そのアプリのデベロッパWebサイトURLをこのサイトに設定
-3. app-ads.txt は変更不要（同じ発行者IDなら共通）
+このリポジトリに残しているもの：
+- 各ページ → riu-create.com の同じページへの転送（App Store Connect に旧 URL が登録されているアプリのため）
+- `404.html` — それ以外のパスも riu-create.com の同じパスへ転送
+- `app-ads.txt` — 実ファイルのまま（デベロッパサイトが旧 URL のアプリの広告確認用）
+- `spiritual-uploader/` — 実ページのまま（Google の OAuth 審査で参照される可能性があるため転送しない）
